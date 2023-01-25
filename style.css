@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+/*
+* {
+    border: 1px solid black;
+}
+*/
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  background-color: #afafaf;
+}
+
+#header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#header-main > h1 {
+  font-size: 3rem;
+}
+
+#showcase {
+  display: flex;
+
+  flex-flow: column;
+  padding-top: 1rem;
+}
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+}
+
+.group > .scrollBox {
+  overflow: clip;
+}
+
+.group > .scrollBox > .images {
+  border-radius: 16px;
+  overflow-y: scroll;
+  cursor: grab;
+}
+
+.group > .text > h2 {
+  margin-top: 0.5rem;
+}
+
+.group > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.tooltip {
+  background-color: #fff;
+  z-index: 10;
+  position: absolute;
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
