@@ -62,7 +62,7 @@ d3.csv("data/catalogue.csv", (d) => d).then(function (data) {
         let images = container
           .append("img")
           .attr("src", getImgPath(d))
-          .attr("height", d.duration * 3)
+          .attr("height", d.duration * 18)
           .attr("alt", `${d.object_name}_${d.object_id}`);
 
         /// === TOOLTIP === ///
@@ -90,7 +90,7 @@ d3.csv("data/catalogue.csv", (d) => d).then(function (data) {
           })
           .on("mouseout", function () {
             d3.select("body").selectAll(".tooltip").remove();
-            d3.select(this).attr("height", d.duration * 3);
+            d3.select(this).attr("height", d.duration * 18);
           });
       });
 
